@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    body {
+        text-align: center;
+    }
+
+    .container {
+        width: 50%;
+        margin: auto;
+        background: rgb(190, 182, 182);
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    h2 {
+        background-color: rgb(190, 182, 182);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .input-section {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 80%;
+        padding: 10px;
+    }
+
+    button {
+        width: 5%;
+        background-color: rgb(17, 231, 17);
+        color: white;
+        border-radius: 4px;
+        margin-right: 100px;
+        border: none;
+    }
+
+    li {
+        background: #ddd;
+        padding: 10px;
+        margin: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    li.checked {
+        background: #888;
+    }
+
+    .close {
+        color: red;
+        cursor: pointer;
+
+    }
+</style>
+</style>
+<body>
+    <div class="container">
+        <h2>My To Do List K24_PTIT</h2>
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Nhập nhiệm vụ">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="./ex5.js"></script>
+</body>
+</html>
